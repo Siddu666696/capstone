@@ -1,6 +1,6 @@
 const Main=()=>{
     return(
-        <main></main>
+        <main>Main</main>
     )
 }
 export default Main;
