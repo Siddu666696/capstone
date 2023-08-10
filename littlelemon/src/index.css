@@ -20,20 +20,27 @@ code {
 }
 nav{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  font-weight:bold;
+}
+.menu{
+  /* width: 100%; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
 }
-ul{
-  list-style: none;
-  display: flex;
-}
-li{
-  padding: 10px;
-  font-weight:bold ;
+.link{
+  text-decoration: none;
+  padding: 0 10px;
+  color: black;
+
 }
 .hero{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   background-color: #495e57;
   
 }
@@ -42,18 +49,22 @@ li{
   flex-direction: column;
   max-width: 600px;
   flex: 1 0.5 auto;
-  padding: 50px;
+  padding: 30px;
 }
 .hero-img-wrap{
-  padding: 50px;
+
   flex: 1 0.5 auto;
   display: flex;
+  max-width: 600px;
   justify-content: center;
   align-items: center;
+  padding: 30px 0px;
 
 }
 .hreo-img{
   border-radius: 30px;
+  width: 500px;
+  height: 500px;
 }
 .tag{
   /* display: inline; */
@@ -78,8 +89,51 @@ li{
   color: aliceblue;
   font-size: 18pt;
 }
-/* @media (max-width: 800px) {
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  /* height: 100vh; */
+}
+.footer-items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.footer-items .link{
+  color: aliceblue;
+}
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #495e57;
+  color: aliceblue;
+}
+.footer h3{
+  color: yellow;
+}
+@media (max-width: 640px) {
   .hero-text-wrap, .hero-img-wrap {
     flex: 100%;
   }
-} */
+  nav,.menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+  .hreo-img{
+    width: 300px;
+    height:300px;
+  }
+  .footer{
+    flex-direction: column;
+    align-items: center;
+  }
+}

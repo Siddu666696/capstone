@@ -1,20 +1,25 @@
+import { useNavigate } from "react-router-dom"
+
+
 const Header=()=>{
+    const Navigate=useNavigate();
+    const reserve=()=>{Navigate("/BookingPage")}
     return(
         <header>
-            <div class="hero">
-                <div class="hero-text-wrap">
+            <div className="hero">
+                <div className="hero-text-wrap">
                     <div>
-                    <h1 class="title">Little Lemon</h1>
-                    <h3 class="tag">Chicago</h3>
+                    <h1 className="title">Little Lemon</h1>
+                    <h3 className="tag">Chicago</h3>
                     </div>
                     <div>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button class="btn">Reserve a Table</button>
+                    <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <button className="btn" onClick={reserve}>Reserve a Table</button>
                     </div>
 
                 </div>
-                <div class="hero-img-wrap">
-                    <img src="./images/restauranfood.jpg" alt="restaurant food" class="hreo-img" width="500px" height="500px"/>
+                <div className="hero-img-wrap">
+                    <img src="./images/restauranfood.jpg" alt="restaurant food" className="hreo-img"/>
 
                 </div>
             </div>
